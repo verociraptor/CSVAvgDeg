@@ -1,2 +1,2 @@
-Prefix plugins/CSVAvgInOutDeg/example/
-Plugin CSVAvgInOutDeg inputfile edges.csv outputfile none
+Prefix plugins/CSVAvgDeg/example/
+Plugin CSVAvgDeg inputfile edges.csv outputfile none

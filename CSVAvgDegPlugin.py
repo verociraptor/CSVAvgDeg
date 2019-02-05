@@ -1,7 +1,7 @@
 import sys
 import csv
 
-class CSVAvgInOutDegPlugin:
+class CSVAvgDegPlugin:
 	def input(self, filename):
 		self.myfile = filename
 
@@ -21,11 +21,10 @@ class CSVAvgInOutDegPlugin:
 
 		for row in self.edges:
 			for i in range(0, len(row)):
-				if(float(row[i]) > 0):
-					edges += 1
+				if(float(row[i]) != 0):
+					edges += float(row[i])
 		
 		vertices = len(self.edges)
-		avg_degree = ((edges * 2.0) / vertices)
+		avg_degree = (edges / vertices)
 	
-		print "Average in-degree: ", (avg_degree / 2), \
-				"\nAverage out-degree: ", (avg_degree / 2)
+		print "Average degree: ", (avg_degree)
