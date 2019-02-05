@@ -1,4 +1,4 @@
-# CSVAvgInOutDeg
+# CSVAvgDeg
 # Language: Python
 # Input: CSV (edge weights)
 # Output: none (average in and out degrees printed to screen)
