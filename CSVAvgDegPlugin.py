@@ -27,4 +27,4 @@ class CSVAvgDegPlugin:
 		vertices = len(self.edges)
 		avg_degree = (edges / vertices)
 	
-		print "Average degree: ", (avg_degree)
+		print("Average degree: ", (avg_degree))
